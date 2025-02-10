@@ -57,8 +57,6 @@ Follow these steps to run the projects locally:
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-## Screenshots
-Add relevant screenshots of your projects to give users a preview.
 
 ## Contributing
 Contributions are welcome! If you want to improve any project or add new features, feel free to fork the repository and create a pull request.
