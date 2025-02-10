@@ -1,0 +1,75 @@
+*{
+    background-color: #282c31;
+    color: white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text{
+   
+    font-weight: 800;
+    font-size: 50px;
+   
+}
+.generate{
+   /* background-color: red; */
+   
+   font-weight: 900px;
+   margin-top: 250px;
+   margin-bottom: 5px;
+   margin-left: 70px;
+   
+
+}
+.pass{
+    
+    text-decoration: underline;
+    color: #6DFFA7;
+    font-weight: 200px;
+    margin-left: 70px;
+
+}
+/* box */
+.box{
+    margin-top: 50px;
+}
+input{
+    margin-left: 70px;
+    color: white;
+    /* font-weight: 150px; */
+    font-size: 20px;
+    border-radius: 5px;
+    width: 320px;
+    height: 25px;
+    padding-top: 5px;
+    border: 1px solid white;
+    padding-bottom: 15px;
+    /* margin-top: 1px; */
+    
+}
+button{
+    margin-left: 70px;
+    height: 60px;
+    width: 180px;
+    font-weight: 200px;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* border: 1.5px solid transparent; */
+    border: 1.5px solid white;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+    transition: all 1s ease;
+
+    
+}
+i{
+    margin-left: 5px;
+    color: #6DFFA7;
+    font-size: 25px;
+
+}
+button:hover{
+   background-color: white;
+   color: black;
+    
+}

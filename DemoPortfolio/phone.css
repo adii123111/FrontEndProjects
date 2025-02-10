@@ -1,0 +1,192 @@
+
+body{
+   
+    padding: 1rem 2rem 0 2rem;
+}
+
+
+.navbar{
+    margin-bottom: 5rem;
+  
+}
+
+
+.logos i{ 
+    padding: 0.39rem;
+
+    
+   
+}
+.fullcontent{
+    display: flex;
+    flex-direction: column;
+ 
+   
+  
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    width: auto;
+    margin-bottom: 3rem;
+  
+    
+
+}
+
+
+
+
+.imageone{
+    min-width: 19rem;
+    height: auto;
+}
+
+
+
+.part2{
+    display: flex;
+    flex-direction: column;
+   
+ 
+} 
+
+    
+.imgthree{
+    margin: 0 0 3rem;
+    background-size: cover;
+    width: 100%;
+   
+}
+
+.intro2{ 
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+
+
+}
+
+.para{
+    padding-top: 1rem;
+    width: 85%;
+   
+}
+.pics{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+.Experience{
+    /* margin-bottom: 2rem; */
+}
+.detailexp{
+    /* display: flex; */
+    flex-wrap: wrap;
+    min-height: 5rem;
+
+
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    /* width: auto; */
+   
+}
+.h4heading1 {
+    width: auto;
+}
+.h61 {
+    width: auto;
+}
+.h4para{
+    width: auto;
+}
+.detailexp2{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 5rem;
+
+
+}
+.content2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+   
+}
+.h4heading2 {
+    width: auto;
+}
+.h62 {
+    width: auto;
+}
+.h4heading2{
+   
+}
+.h4para2{
+    width: auto;
+}
+.onlyexp{
+    min-height: 500px;
+    width: auto;
+}
+.fullpartcontent{
+    max-height: 1150px;
+
+flex-wrap: wrap;  
+}
+.p1part{
+    display: flex;
+    flex-direction: column;
+}
+
+.p1imgpart{
+    text-align: center;
+   
+
+}
+.p1infopart{
+    width: fit-content;
+
+
+}
+
+.p2part{
+    display: flex;
+    flex-direction: column;
+}
+
+.p2imgpart{
+    text-align: center;
+   
+
+}
+.p2infopart{
+    width: fit-content;
+
+
+}
+.p3part{
+    display: flex;
+    flex-direction: column;
+}
+
+.p3imgpart{
+    text-align: center;
+   
+
+}
+.p3infopart{
+    width: fit-content;
+
+
+}
+footer{
+   
+}

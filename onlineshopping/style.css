@@ -1,0 +1,240 @@
+*{
+    /* border-color: red; */
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variable */
+:root{
+    --navbar-height: 59px;
+}
+/* naibar */
+#navbar{
+    position: relative;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+/* logo and image */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 5.4;
+}
+
+
+#logo {
+    margin: 10px 34px;
+
+}
+
+.logo img{
+    height: 56px;
+    margin: 3px 6px;
+
+ }
+/* list */
+#navbar{
+    position: relative;
+}
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'baloo Bhai';
+}
+
+#navbar ul li{
+    display: flex;
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+} 
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 6px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+} 
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+
+   
+} 
+/* section part */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    height:550px;
+    /* 788px */
+    align-items: center;
+    
+}
+#home::before{
+    content: "";
+    background: url(bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+/* servces */
+#services{
+    margin: 34px;
+    /* margin-bottom: -100px; */
+    display: flex;
+  
+}
+
+
+#services .box{
+    border: 2px solid brown;
+    /* background-color: red; */
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    /* background-size: cover; */
+}
+#services box p {
+    
+    font-family: 'bree serif';
+}
+
+/* client section */
+#client-section{
+    /* background-color: rebeccapurple; */
+    /* height: 344px; */
+    /* position: re; */
+
+ }
+ #client-section::before{
+    content: "";
+    position: absolute;
+    background: url(bg2.jpg);
+    width: 100%;height: 67%;
+    z-index: -1;
+    opacity: .4;
+    background-size: cover;
+
+ }
+ #clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+.client-item{
+    padding: 34px;
+
+}
+ #clients img{
+    height: 124px;
+
+ }
+
+/* Contactus */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+ content: "";
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.7;
+
+ position: absolute;
+ background: url(contact.jpg) no-repeat center/cover;
+
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+ #contact-box input,
+ #contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+    font-size: .75rem;
+    font-weight: 5.5rem;
+
+ }
+ #contact-box form{
+    width: 40%;
+
+
+ }
+ #contact-box label{
+    font-size: 1.3rem;
+    font-family: 'bree serif';
+
+ }
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px ;
+}
+/* class */
+.h-primary {
+    margin-top: 90px;
+    font-size: 3.8rem;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'bree serif';
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'bree serif';
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: tomato;
+    color: brown;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.centre{
+    text-align: center;
+}

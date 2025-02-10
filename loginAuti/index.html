@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Register</title> 
+  <script type = "module" src="login.js" defer ></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    form {
+      max-width: 300px;
+      margin: 0 auto;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #218838;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>Login or Register</h1>
+
+  <div class="container">
+    <!-- Register Form -->
+    <form id="registerForm">
+      <h2>Register</h2>
+      <input type="text" id="registerEmail" placeholder="Email" required>
+      <input type="password" id="registerPassword" placeholder="Password" required>
+      <button type="submit" id="registerButton">Register</button>
+    </form>
+
+     Login Form 
+    <form id="loginForm">
+      <h2>Login</h2>
+      <input type="text" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit" id="loginButton">Login</button>
+    </form>
+  </div>
+
+  <script type="module">
+    // Import Firebase functions
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js";
+
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDPrkFq30P7ZDdNFVsSfmXWCOXuFYZfx2I",
+      authDomain: "login-606ca.firebaseapp.com",
+      projectId: "login-606ca",
+      storageBucket: "login-606ca.firebasestorage.app",
+      messagingSenderId: "120538246243",
+      appId: "1:120538246243:web:56a542840db1327d6f1c56"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+
+    // Register Event
+    document.getElementById('registerForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('registerEmail').value;
+      const password = document.getElementById('registerPassword').value;
+
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          alert("Registration successful!");
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
+    });
+
+    // Login Event
+    // document.getElementById('loginForm').addEventListener('submit', (e) => {
+    //   e.preventDefault();
+    //   const email = document.getElementById('loginEmail').value;
+    //   const password = document.getElementById('loginPassword').value;
+
+    //   signInWithEmailAndPassword(auth, email, password)
+    //     .then((userCredential) => {
+    //       alert("Login successful!");
+    //       window.location.href = "main.html";
+    //     })
+    //     .catch((error) => {
+    //       alert(error.message);
+    //     });
+    // });
+  </script>
+</body>
+</html>
